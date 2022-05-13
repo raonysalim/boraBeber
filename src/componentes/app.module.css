@@ -1,11 +1,17 @@
-.tittleContainer {
+/*Titulo*/
+
+.titleContainer {
     display:flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     
 }
-
+.title{
+    color: black;
+    font-size: 50px;
+}
+/* barra de navegação */
 .barraNav {
     display: flex;
     justify-content: flex-start;
@@ -16,22 +22,24 @@
 .textNav{
     color: rgb(0, 0, 0);
     font-size: 35px;
-    margin-top: 75px;
     text-decoration: none;
+    margin-top: 50px;
 }
 
 .containerNav {
-   position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
     width: 300px;
-    height: 100vh;
+    height: 700px;
     background-color: rgb(245, 154, 51);
-    bottom: 126px;
+    bottom: 205px;
     right: 8px; 
 }
 
 .textNavActive{
-    color: rgb(0, 0, 0);
+    color: rgb(66, 79, 145);
     font-size: 35px;
     margin-top: 75px;
-    text-decoration: none;
 }
