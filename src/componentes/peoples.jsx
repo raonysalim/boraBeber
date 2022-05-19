@@ -1,3 +1,5 @@
+import styles from './app.module.css'
+
 
 export default function peoples (props){
 
@@ -7,11 +9,6 @@ export default function peoples (props){
         {name:'Jorge', fullname: 'Jorge da Silva', country:'Brazil', city:'João Pessoa', telephone:'+55 83 548796215'},
         {name:'Ana', fullname: 'Ana Clara Caetano', country:'Brazil', city:'Rio de Janeiro', telephone:'+55 21 854778962'}
     ]
-
-   // const rafael=Object.values(coqueteis[0])
-   // const amanda=Object.values(coqueteis[1])
-   // const jorge=Object.values(coqueteis[2])
-   // const ana=Object.values(coqueteis[3])
 
     let nome=[]
     const dados=props.dados
@@ -31,17 +28,30 @@ export default function peoples (props){
                 nome=Object.values(coqueteis[3])
                 break;    
     }
+    const visible=()=>{
+        if (nome.length>0)
+            return true
+            else return false
+    }
 
-    let data=''
-    nome.forEach((nome)=>{
-        return data += nome+ ' '
-      })
-
-    console.log()
+    console.log(visible())
      return(
-        <div>
-        <p>teste:{data}l</p> 
-        <ul></ul> 
+        <div className={visible()?styles.peopleContainer:styles.displayNone}>
+        <p className={styles.peopleText}>
+        Nome: {nome[0]}
+        </p> 
+        <p className={styles.peopleText}>
+        Nome Completo: {nome[1]}
+        </p>
+        <p  className={styles.peopleText}>
+        País: {nome[2]}
+        </p> 
+        <p  className={styles.peopleText}>
+        Cidade: {nome[3]}
+        </p> 
+        <p  className={styles.peopleText}>
+        Celular: {nome[4]}
+        </p>  
         </div>
     )
 }

@@ -1,45 +1,73 @@
-/*Titulo*/
+* {
+    background-color: rgb(198, 219, 247);
+}
 
-.titleContainer {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+.main{
     
 }
-.title{
-    color: black;
-    font-size: 50px;
+.titleContainer{
+    text-align: center;
+    font-size: 80px;
 }
-/* barra de navegação */
-.barraNav {
+
+.navBar{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    width:100vw;
+    height: 500px;
+    justify-content: space-around;
+}
+
+.navText {
+display:block;
+position: static;
+font-size: 35px;
+text-decoration: none;
+color: rgb(0, 0, 0);
+width: 150px;
+}
+
+.navText:hover {
+    background-color: rgb(241, 232, 99);
+}
+
+.home{
+    color:black;
+    font-size: 25;
+    text-decoration: none;
+}
+
+.peopleContainer {
+    display: flex;
+    position: relative;
+    bottom: 500px;
+    left:600px;
+    text-align:justify;
     flex-direction: column;
 }
 
-.textNav{
-    color: rgb(0, 0, 0);
+.peopleText {
     font-size: 35px;
-    text-decoration: none;
-    margin-top: 50px;
 }
 
-.containerNav {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    position: relative;
-    width: 300px;
-    height: 700px;
-    background-color: rgb(245, 154, 51);
-    bottom: 205px;
-    right: 8px; 
+.dataContainer {
+    display:flex;
+    flex-direction: column;
+    list-style-type:none;
+    
 }
 
-.textNavActive{
-    color: rgb(66, 79, 145);
-    font-size: 35px;
-    margin-top: 75px;
+.dataText{
+    margin-right: 25px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.displayNone {
+    display: none;
+}
+
+
+.navTextActive {
+    background-color: rgb(241, 232, 99);
 }

@@ -5,11 +5,10 @@ import styles from '../app.module.css'
 
 export default function jorge(){
     return (
-    <div>
-        <p>teste1</p>
         <div>
-            <nav className={styles.teste}>
-                <Link to='/'>Home</Link>
+        <div>
+            <nav>
+                <Link className={styles.home} to='/'>Voltar</Link>
                 <NavPeoples/>
                 <Calc dados='Jorge'/>
         
